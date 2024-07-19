@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+  color: $text-color;
+}
+
+.app {
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  line-height: 2;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: darken($primary-color, 10%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lighten($primary-color, 10%);
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: $primary-color #f1f1f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
